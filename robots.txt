@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: http://blog.theworldj.tk/sitemap.xml
+Disallow: /ghost/
