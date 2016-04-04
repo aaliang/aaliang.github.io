@@ -1,0 +1,176 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>@tailrec</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=f15113d702">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="import theworldj._">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="@tailrec">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="http://localhost:2368/tailrec/">
+    <meta property="article:published_time" content="2016-04-04T19:32:00.774Z">
+    <meta property="article:modified_time" content="2016-04-04T19:38:37.983Z">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="@tailrec">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:url" content="http://localhost:2368/tailrec/">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "import theworldj._",
+    "author": {
+        "@type": "Person",
+        "name": "Andy Liang",
+        "image": "http://localhost:2368/content/images/2015/11/2993379.jpg",
+        "url": "http://localhost:2368/author/andy/",
+        "sameAs": "http://github.com/aaliang",
+        "description": "Coder, Wannabe Backpacker, Amateur Photographer\nBU CAS CS 2011\nRC Fall 2 2015"
+    },
+    "headline": "@tailrec",
+    "url": "http://localhost:2368/tailrec/",
+    "datePublished": "2016-04-04T19:32:00.774Z",
+    "dateModified": "2016-04-04T19:38:37.983Z"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="import theworldj._" href="../rss/index.html">
+</head>
+<body class="post-template nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="../">Home</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="../rss/index.rss">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">@tailrec</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2016-04-04">04 April 2016</time> 
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Next week I am returning to industry. It's been just under eight months since I've pulled in a steady paycheck and I'm just about ready to go back. Looking back at my break I still think it was the right decision. At the very least I've gained two life skills: how to properly use a french press (I'm a sorry excuse for a human adult) and how to ride a motorbike. I'm extremely fortunate to have been able to afford pushing the eject button. In today's world of over-sharing it's easy to get swayed by what your peers are doing - maybe they're buying houses, getting married, pursuing advanced degrees, etc. These are all awesome things for the right people and great things to live for.</p>
+
+<p>To be honest, leaving a career  in pursuit of self-improvement is really not a grandiose thing to do. In fact it's absolutely selfish. Few people have the means or support system to eschew adult responsibilities for extended periods of time. When I left [the only home I've ever known] last summer I didn't have a concrete goal, yes I had abstract thoughts about what I wanted to do but I wouldn't have been able to describe what my endgame was. I really only had two (and a half) things to cross off my bucket list which was:</p>
+
+<ul>
+<li>go backpacking in Southeast Asia</li>
+<li>go to the Recurse Center in New York City</li>
+</ul>
+
+<p>I'm extremely privileged to have been able to do this. To many people when they start their first job they'll have to keep working until they're forced to retire. Often times people hate the situation they're in but stick it out because their alternative prospects aren't as great. Other people eventually convince themselves to like it because they have to keep up an image or lifestyle.</p>
+
+<p>Cards on the table: finding a good job after taking a hiatus from tech wasn't exactly a walk in the park. I walked away from a lot of interviews thinking they were slam dunks only to get a <strong>thanks for interviewing with us, but we don't want you</strong>-type response (there have been many of these). I don't have any insightful advice on this front aside. Just keep your head up - treat every time that you feel unwanted as another chip on your shoulder. For everyone who says you're not good enough, use this as a chance to prove to yourself that you are.</p>
+
+<p>It took me longer than expected to put ink on paper for the right opportunity. Come next Monday I'll be starting in Union Square NYC leading the next generation of backend development on <a href="http://indicative.com">Indicative's</a> behavioral analytics platform.</p>
+
+<p><img src="../content/images/2016/04/DSC_0628.png" alt=""></p>
+
+<pre><code>println!("thanks!");  
+</code></pre>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/andy/" style="background-image: url(../content/images/2015/11/2993379.jpg)"><span class="hidden">Andy Liang's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/andy/">Andy Liang</a></h4>
+
+                    <p>Coder, Wannabe Backpacker, Amateur Photographer
+BU CAS CS 2011
+RC Fall 2 2015</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">New York, New York</span>
+                    <span class="author-link icon-link"><a href="http://github.com/aaliang">http://github.com/aaliang</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=%40tailrec&amp;url=http://localhost:2368/tailrec/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/tailrec/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/tailrec/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story prev no-cover" href="../metaprogramming-in-rust/">
+        <section class="post">
+            <h2>Metaprogramming In Rust</h2>
+            <p>Background I've been hanging out at the Recurse Center over the last seven weeks. People come to RC for…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="../">import theworldj._</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <!-- You can safely delete this line if your theme does not require jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=f15113d702"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=f15113d702"></script>
+
+</body>
