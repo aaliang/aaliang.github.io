@@ -2059,6 +2059,10 @@ body:not(.post-template) .post-title {
     }
 }
 
+sub {
+   line-height: 100%;
+}
+
 
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
