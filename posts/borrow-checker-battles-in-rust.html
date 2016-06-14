@@ -1,4 +1,4 @@
-<p>Likely the first thing that baby rustaceans will bang their heads on is the concept of lifetimes and the borrow checker. One of the things I took for granted in virtually every other programming language that I used was the ability to call methods off of an object without too much fuss. Calling methods needs to be handled drastically differently in rust-lang.</p>
+<p>Likely the first thing that little baby rustaceans will bang their heads on is the concept of lifetimes and the borrow checker. One of the things I took for granted in virtually every other programming language that I used was the ability to call methods off of an object without too much fuss. Calling methods needs to be handled drastically differently in rust-lang.</p>
 <p>In the listing below I&#39;m trying to model a simple type representing a node in a simple neural network:</p>
 <ul>
 <li>An instance of a Neuron will contain a 32 bit integer for the number of inputs it takes <em>num_inputs</em></li>
@@ -22,14 +22,12 @@
 }
 </code></pre><p>Now let&#39;s say we want to do some quality logging at some point and we would like to print out each of the weights in a neuron&#39;s vector. For convenience let&#39;s make it a method! Hmm yeah...! let&#39;s add it to <code>impl Neuron</code> shall we?</p>
 <pre><code>impl Neuron {
-
       /* ... blah blah... fn new still looks the same */
-
-          fn print_weights (self) {
-                    for weight in self.weights {
-                                  println!(&quot;{}&quot;, weight);
-                                          }
-                                              }
+      fn print_weights (self) {
+        for weight in self.weights {
+          println!(&quot;{}&quot;, weight);
+        }
+      }
 }
 </code></pre><p>Now we can instantiate an instance, and then print the weights like so:</p>
 <pre><code>fn main() {
