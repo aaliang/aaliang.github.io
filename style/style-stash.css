@@ -1131,6 +1131,36 @@ body:not(.post-template) .post-title {
 }
 
 
+#navcontainer {
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+
+#navcontainer ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+
+#navcontainer ul li { display: inline; }
+
+#navcontainer ul li a
+{
+text-decoration: none;
+padding: .2em 1em;
+color: #bbb;
+background-color: #fff;
+border: 1px solid #eee;
+}
+
+#navcontainer ul li a:hover
+{
+color: #ddd;
+background-color: #369;
+}
+
 /* ==========================================================================
    10. Footer - The bottom of every page
    ========================================================================== */
@@ -1396,3 +1426,4 @@ body:not(.post-template) .post-title {
     .read-next .post {
         width: 100%;
     }
+  }
