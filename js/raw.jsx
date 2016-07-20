@@ -12,7 +12,7 @@ var posts = [
   PostPreview.from(
     "post[0]",
     "Andy Liang",
-    "04 April 2016",
+    "20 July 2016",
     "0.html")
 ];
 
@@ -24,9 +24,6 @@ var Previews = React.createClass({displayName: 'Preview',
         <header className="post-header">
           <h2 className="post-title"><a href={"#/post/"+post.source}>{post.title}</a></h2>
         </header>
-        <footer className="post-meta">
-          <time class="post-date">{post.datePublished}</time>
-        </footer>
       </article>
     )});
     return (
