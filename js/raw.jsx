@@ -13,7 +13,12 @@ var posts = [
     "post[0]",
     "Andy Liang",
     "20 July 2016",
-    "0.html")
+    "0.html"),
+  PostPreview.from(
+    "loss",
+    "Andy Liang",
+    "09 August 2016",
+    "1-loss.html")
 ];
 
 //this isnt really following react best practices. hastily written
