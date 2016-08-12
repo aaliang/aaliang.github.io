@@ -10,15 +10,15 @@ PostPreview.from = function (title, previewText, author, datePublished, source) 
 };
 var posts = [
   PostPreview.from(
-    "post[0]",
-    "Andy Liang",
-    "20 July 2016",
-    "0.html"),
-  PostPreview.from(
     "loss",
     "Andy Liang",
     "09 August 2016",
-    "1-loss.html")
+    "1-loss.html"),
+  PostPreview.from(
+    "post[0]",
+    "Andy Liang",
+    "20 July 2016",
+    "0.html")
 ];
 
 //this isnt really following react best practices. hastily written
