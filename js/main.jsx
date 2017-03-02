@@ -10,6 +10,12 @@ PostPreview.from = function (title, previewText, author, datePublished, source) 
 };
 var posts = [
   PostPreview.from(
+    "unfamiliar loss",
+    "There's not much more I can say about this.",
+    "Andy Liang",
+    "09 August 2016",
+    "unfamiliar-loss.html"),
+  PostPreview.from(
     "@tailrec",
     "Next week I am returning to industry. It's been just under eight months since I've pulled in a steady paycheck and I'm just about ready to",
     "Andy Liang",
